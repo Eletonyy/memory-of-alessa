@@ -1,6 +1,15 @@
 #include "sh2_common.h"
 #include "Chacter_Draw/vifot/sh_kt_vif1ot2.h"
 
+static void Init2ndOT(ktVif1Ot2* ot);
+static void Make2ndOT(ktVif1Ot2* ot);
+static void Sort2(sceDmaTag* top_2, sceDmaTag* p);
+static void SetNext(sceDmaTag* tag, sceDmaTag* p);
+static sceDmaTag* Next(sceDmaTag* tag);
+static u_int Depth2(sceDmaTag* tag);
+static sceDmaTag* Link(sceDmaTag* tag);
+UNMIGRATED (/* static */ sceDmaTag term); // size: 0x10, address: 0x2A94A0
+
 #line 221
 void ktVif1Ot2Init(ktVif1Ot2* ot, u_int n_bits_1, sceDmaTag* top_1, u_int n_bits_2, sceDmaTag* top_2) {
     sceDmaTag* p;

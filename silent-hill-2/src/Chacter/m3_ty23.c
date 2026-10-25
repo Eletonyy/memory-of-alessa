@@ -22,7 +22,7 @@ static void EnemyTY23Function(SubCharacter* this) {
             if (this->battle.status & 0x400) {
                 
                 EnemyTY23Init();
-                SCStayModelSwitch(this, 1);
+                SCStayModelSwitch(this, true);
                 
                 shCharacterWorldScreenObjectSetNew(this, scale);
                 

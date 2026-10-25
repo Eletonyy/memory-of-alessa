@@ -1,6 +1,7 @@
 #include "sh2_common.h"
-#include "character.h"
+#include "Chacter/character.h"
 #include "Enemy/en_common.h"
+#include "Chacter/m3_ty23.h"
 
 static int EnemyTY23Init(void);
 static void EnemyTY23Function(SubCharacter* this);
